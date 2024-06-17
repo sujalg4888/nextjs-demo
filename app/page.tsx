@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import {lusitana} from '@/app/ui/fonts'
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">
@@ -48,6 +49,7 @@ export default function Page() {
         </div>
       </div>
     <SpeedInsights></SpeedInsights>
+    <Analytics></Analytics>
     </main>
   );
 }
